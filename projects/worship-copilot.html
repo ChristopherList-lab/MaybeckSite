@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Worship Copilot - AI for Church Production | Maybeck</title>
+  <meta name="description" content="Worship Copilot gives ministry production teams AI-powered service planning, volunteer scheduling, and broadcast support. Built for houses of worship.">
+  <link rel="canonical" href="https://maybeck.com/projects/worship-copilot.html">
+  <link rel="icon" type="image/png" href="/assets/images/logo-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maybeck.com/projects/worship-copilot.html">
+  <meta property="og:title" content="Worship Copilot - AI Production Tools for Houses of Worship | Maybeck">
+  <meta property="og:description" content="AI-powered service planning, volunteer scheduling, and broadcast support for ministry production teams.">
+  <meta property="og:image" content="https://maybeck.com/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Worship Copilot","applicationCategory":"ProductivityApplication","description":"AI-powered service planning, volunteer scheduling, and broadcast support for ministry production teams in houses of worship.","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/PreOrder"},"author":{"@type":"Organization","name":"Maybeck Production Systems","url":"https://maybeck.com"}}
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/shared.css"/>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#3B82F6",
+            "surface": "#09090B",
+            "surface-container-low": "#111113",
+            "surface-container-high": "#18181b",
+            "surface-container-highest": "#27272a",
+            "surface-container-lowest": "#050507",
+            "on-surface": "#e5e1e4",
+            "on-surface-variant": "#a1a1aa",
+            "outline-variant": "#27272a",
+            "primary-container": "#3B82F6",
+            "on-primary-container": "#000000"
+          },
+          borderRadius: {
+            DEFAULT: "0px",
+            lg: "0px",
+            xl: "0px",
+            full: "9999px"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary/30">
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-[#09090B]/80 backdrop-blur-xl border-b border-white/5">
+  <div class="flex justify-between items-center max-w-[1400px] mx-auto px-6 md:px-12 h-20">
+    <a href="/" class="flex items-center gap-3"><img src="/assets/images/logo-icon.png" alt="" class="h-7 w-auto brightness-200"><span class="text-xl font-black tracking-tighter text-[#E5E1E4] font-headline uppercase">MAYBECK</span></a>
+    <div class="hidden lg:flex items-center space-x-10">
+      <a class="font-mono text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="/">// Home</a>
+      <div class="relative group">
+        <button class="font-mono text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1">
+          // Projects
+          <span class="material-symbols-outlined text-xs transition-transform group-hover:rotate-180">expand_more</span>
+        </button>
+        <div class="absolute top-full left-0 mt-4 w-64 bg-surface-container-high border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+          <a href="/projects/avl-copilot.html" class="flex items-center gap-3 px-5 py-3 hover:bg-white/5 transition-colors">
+            <img src="/assets/images/projects/avl-copilot-logo.png" alt="" class="h-5 w-auto">
+          </a>
+          <a href="/projects/post-genius.html" class="flex items-center gap-3 px-5 py-3 hover:bg-white/5 transition-colors">
+            <img src="/assets/images/projects/post-genius-logo-dark.png" alt="" class="h-5 w-auto">
+          </a>
+          <a href="/projects/mavrick.html" class="flex items-center gap-3 px-5 py-3 font-mono text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-white/5 transition-colors">Mavrick (Pre-release)</a>
+          <a href="/projects/worship-copilot.html" class="flex items-center gap-3 px-5 py-3 font-mono text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-white/5 transition-colors">Worship Copilot (Pre-release)</a>
+        </div>
+      </div>
+    </div>
+    <a href="/contact.html" class="hidden md:block bg-primary text-black px-6 py-2 font-mono font-bold uppercase text-[10px] tracking-widest hover:bg-white transition-all">
+      Get Access
+    </a>
+    <button class="lg:hidden text-on-surface" id="mobile-toggle" aria-label="Toggle menu">
+      <span class="material-symbols-outlined text-2xl">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="fixed inset-0 top-20 z-40 bg-surface hidden" id="mobile-menu">
+  <div class="flex flex-col p-8 space-y-6">
+    <a class="font-mono text-sm uppercase tracking-widest text-on-surface-variant" href="/">// Home</a>
+    <div>
+      <span class="font-mono text-[10px] uppercase tracking-widest text-on-surface-variant/60 mb-3 block">// Projects</span>
+      <div class="flex flex-col space-y-4 pl-4">
+        <a class="font-mono text-sm uppercase tracking-widest text-on-surface-variant" href="/projects/avl-copilot.html">AVL Copilot</a>
+        <a class="font-mono text-sm uppercase tracking-widest text-on-surface-variant" href="/projects/post-genius.html">Post Genius</a>
+        <a class="font-mono text-sm uppercase tracking-widest text-on-surface-variant" href="/projects/mavrick.html">Mavrick (Pre-release)</a>
+        <a class="font-mono text-sm uppercase tracking-widest text-on-surface-variant" href="/projects/worship-copilot.html">Worship Copilot (Pre-release)</a>
+      </div>
+    </div>
+    <hr class="border-white/10">
+    <a href="/contact.html" class="bg-primary text-black px-6 py-3 font-mono font-bold uppercase text-xs tracking-widest hover:bg-white transition-all text-center">Get Access</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- Hero -->
+  <section class="pt-40 pb-24 px-6 md:px-12 border-b border-white/5">
+    <div class="max-w-[1400px] mx-auto">
+      <a href="/" class="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors mb-16">
+        <span class="material-symbols-outlined text-sm">arrow_back</span> Back to Home
+      </a>
+      <div class="space-y-6">
+        <div class="flex items-center gap-4">
+          <span class="font-mono text-[10px] tracking-[0.3em] uppercase text-on-surface-variant">04</span>
+          <span class="font-mono text-[10px] tracking-widest uppercase bg-primary/10 text-primary px-3 py-1 border border-primary/20">Pre-Release</span>
+        </div>
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-headline font-black tracking-tighter uppercase leading-[0.85]">
+          WORSHIP COPILOT
+        </h1>
+        <p class="text-xl md:text-2xl text-on-surface-variant max-w-3xl leading-relaxed">
+          Purpose-built AI for houses of worship. Production support designed for the unique demands of ministry environments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Screenshot Placeholder -->
+  <section class="px-6 md:px-12 py-24 border-b border-white/5">
+    <div class="max-w-[1400px] mx-auto">
+      <div class="aspect-video bg-surface-container-high border border-white/5 flex items-center justify-center">
+        <span class="font-mono text-xs text-on-surface-variant uppercase tracking-widest">Product Screenshot</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="py-32 px-6 md:px-12 border-b border-white/5">
+    <div class="max-w-[1400px] mx-auto">
+      <div class="grid lg:grid-cols-2 gap-24 items-start">
+        <div>
+          <div class="font-mono text-primary text-sm tracking-[0.2em] uppercase mb-6">Mission</div>
+          <h2 class="text-5xl md:text-7xl font-headline font-black tracking-tighter uppercase leading-[0.85]">Mission</h2>
+        </div>
+        <div class="space-y-8 text-lg text-on-surface-variant leading-relaxed">
+          <p>Houses of worship run complex production operations with volunteer teams, rotating schedules, and tight turnarounds. Worship Copilot understands that context and meets these teams where they are.</p>
+          <p>From service planning and volunteer scheduling to live production cues and post-service content, Worship Copilot handles the technical coordination so ministry leaders can focus on their mission.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-32 px-6 md:px-12 bg-surface-container-low border-b border-white/5">
+    <div class="max-w-[1400px] mx-auto">
+      <div class="font-mono text-primary text-sm tracking-[0.2em] uppercase mb-6">Key Capabilities</div>
+      <h2 class="text-5xl md:text-7xl font-headline font-black tracking-tighter uppercase leading-[0.85] mb-20">Capabilities</h2>
+      <div class="grid md:grid-cols-3 gap-px bg-white/5">
+        <div class="bg-surface p-8 space-y-4 border border-white/5">
+          <span class="material-symbols-outlined text-3xl text-primary">checklist</span>
+          <h3 class="font-mono text-xs uppercase tracking-widest font-bold">Service Planning</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Build run-of-show documents, cue sheets, and production plans from a simple service outline. Adapts to your format.</p>
+        </div>
+        <div class="bg-surface p-8 space-y-4 border border-white/5">
+          <span class="material-symbols-outlined text-3xl text-primary">groups</span>
+          <h3 class="font-mono text-xs uppercase tracking-widest font-bold">Volunteer Management</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Smart scheduling that accounts for availability, skill level, and training status. Automated reminders and confirmations.</p>
+        </div>
+        <div class="bg-surface p-8 space-y-4 border border-white/5">
+          <span class="material-symbols-outlined text-3xl text-primary">cast</span>
+          <h3 class="font-mono text-xs uppercase tracking-widest font-bold">Broadcast Support</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Live stream optimization, multi-camera switching assistance, and automated highlight reel generation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-40 px-6 md:px-12 relative text-center">
+    <div class="max-w-4xl mx-auto space-y-12">
+      <h2 class="text-6xl md:text-9xl font-headline font-black tracking-tighter uppercase leading-[0.8]">
+        GET EARLY <br/><span class="text-primary italic">ACCESS.</span>
+      </h2>
+      <p class="text-xl text-on-surface-variant font-mono uppercase tracking-widest max-w-2xl mx-auto">Worship Copilot is in pre-release. Request access to join the pilot program.</p>
+      <div class="pt-8">
+        <a href="/contact.html" class="inline-block bg-primary text-black font-mono font-black px-16 py-6 uppercase tracking-[0.3em] text-xs hover:bg-white hover:scale-105 transition-all">
+          Request Access
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <section class="py-20 border-y border-white/5 overflow-hidden">
+    <div class="flex whitespace-nowrap animate-infinite-scroll">
+      <div class="flex items-center gap-24 mx-12">
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter">CLARITY</span>
+        <span class="w-3 h-3 bg-primary rounded-full"></span>
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter">CREATIVITY</span>
+        <span class="w-3 h-3 bg-primary rounded-full"></span>
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter">EXCELLENCE</span>
+        <span class="w-3 h-3 bg-primary rounded-full"></span>
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter text-outline">ENGINEERED FOR PRECISION</span>
+      </div>
+      <div class="flex items-center gap-24 mx-12">
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter">CLARITY</span>
+        <span class="w-3 h-3 bg-primary rounded-full"></span>
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter">CREATIVITY</span>
+        <span class="w-3 h-3 bg-primary rounded-full"></span>
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter">EXCELLENCE</span>
+        <span class="w-3 h-3 bg-primary rounded-full"></span>
+        <span class="text-4xl font-headline font-black uppercase tracking-tighter text-outline">ENGINEERED FOR PRECISION</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-white/5 py-24 px-6 md:px-12">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
+      <div class="space-y-8">
+        <a href="/" class="flex items-center gap-3"><img src="/assets/images/logo-icon.png" alt="" class="h-6 w-auto brightness-200"><span class="text-2xl font-black tracking-tighter uppercase font-headline">MAYBECK</span></a>
+        <p class="text-sm font-mono text-on-surface-variant leading-relaxed">Advanced AI-enabled tech<br/>for the AVL market.</p>
+      </div>
+      <div class="space-y-6">
+        <h4 class="font-mono text-[10px] tracking-[0.3em] uppercase text-primary">Projects</h4>
+        <ul class="space-y-4 text-sm uppercase font-mono tracking-wider text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="/projects/avl-copilot.html">// AVL Copilot</a></li>
+          <li><a class="hover:text-primary transition-colors" href="/projects/post-genius.html">// Post Genius</a></li>
+          <li><a class="hover:text-primary transition-colors" href="/projects/mavrick.html">// Mavrick</a></li>
+          <li><a class="hover:text-primary transition-colors" href="/projects/worship-copilot.html">// Worship Copilot</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="font-mono text-[10px] tracking-[0.3em] uppercase text-primary">Company</h4>
+        <ul class="space-y-4 text-sm uppercase font-mono tracking-wider text-on-surface-variant">
+          <li><a class="hover:text-primary transition-colors" href="/">// Home</a></li>
+          <li><a class="hover:text-primary transition-colors" href="/contact.html">// Contact</a></li>
+          <li><a class="hover:text-primary transition-colors" href="mailto:support@maybeck.com">// Support</a></li>
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h4 class="font-mono text-[10px] tracking-[0.3em] uppercase text-primary">Status</h4>
+        <div class="p-6 bg-surface-container-high border border-white/5 font-mono text-[10px] text-primary/70 space-y-1">
+          <div>&gt; STATUS: OPERATIONAL</div>
+          <div>&gt; LOC: UNITED_STATES</div>
+          <div>&gt; support@maybeck.com</div>
+          <div class="animate-pulse">&gt; _</div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between gap-8">
+      <p class="text-[10px] font-mono uppercase tracking-[0.3em] text-on-surface-variant">&copy; 2026 Maybeck Production Systems. All rights reserved.</p>
+      <p class="text-[10px] font-mono uppercase tracking-[0.3em] text-on-surface-variant">Engineered for Precision.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+      document.body.style.overflow = menu.classList.contains('hidden') ? '' : 'hidden';
+    });
+  }
+</script>
+</body>
+</html>
