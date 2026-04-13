@@ -48,7 +48,6 @@ button, a, [role="button"], label.chip-toggle {
 /* Subtle headline hover scale */
 h1, h2, h3 {
   transition: transform 0.3s ease;
-  display: inline-block;
 }
 
 h1:hover, h2:hover, h3:hover {
